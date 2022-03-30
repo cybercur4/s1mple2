@@ -1,19 +1,4 @@
-<?php
-	if(isset($_REQUEST['msg'])){
-	  if($_REQUEST['msg']=="email"){ ?>
-	    <script>
-		   alert("Email id wrong");
-		</script>
-	  
-	  <?php }
-	  
-	  if($_REQUEST['msg']=="password"){ ?>
-	    <script>
-		   alert("Password id wrong");
-		</script>
-	  <?php }
-	}
-?>
+
 <!DOCTYPE html>
 <head>
 <title>Registration / Login Form</title>
@@ -206,5 +191,21 @@
 		<!--validator js-->
 		<script src="js/validator.min.js"></script>
 		<!--//validator js-->
+	<?php
+	if(isset($_REQUEST['msg'])){
+	  if($_REQUEST['msg']=="email"){ ?>
+	    <script>
+		   alert("Email id wrong");
+		</script>
+	  
+	  <?php }
+	  
+	  if($_REQUEST['msg']=="password"){ ?>
+	    <script>
+		   alert("Password id wrong");
+		</script>
+	  <?php }
+	}
+?>
 </body>
 </html>
